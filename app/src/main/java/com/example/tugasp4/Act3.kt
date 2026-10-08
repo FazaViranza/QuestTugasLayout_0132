@@ -184,5 +184,53 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
 
             }
         }
+        Card(
+            modifier = Modifier
+                .fillMaxWidth(1f)
+                .padding(12.dp),
+            colors = CardDefaults.cardColors(
+                containerColor = colorResource(R.color.green1)
+            )
+        ) {
+            Row (
+                modifier = Modifier.fillMaxWidth().padding(8.dp),
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.SpaceBetween
+            ){
+                val gambar = painterResource(R.drawable.logo_umy)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(60.dp).padding(5.dp)
+                )
+                Column {
+                    Text(
+                        text = stringResource(R.string.mhs1),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        text = stringResource(R.string.nohp),
+                        fontSize = 20.sp,
+                        color = colorResource(R.color.teal_200),
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        text = stringResource(R.string.almt1),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier.size(60.dp).padding(5.dp)
+                )
+
+            }
+        }
     }
 }
