@@ -227,6 +227,7 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                         color = colorResource(R.color.white),
                         modifier = Modifier.padding(top = 15.dp)
                     )
+
                     Text(
                         text = stringResource(R.string.nohp),
                         fontSize = 20.sp,
