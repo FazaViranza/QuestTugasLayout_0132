@@ -5,20 +5,20 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -27,14 +27,15 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
+
 @Composable
 fun TugasPrak3(modifier: Modifier = Modifier) {
     Column(
         modifier = modifier
-            .padding(top = 70.dp)
+            .padding(top = 50.dp)
+            .verticalScroll(rememberScrollState())
             .fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.spacedBy(4.dp),
     ) {
         Text(
             text = stringResource(R.string.prodi),
@@ -43,9 +44,8 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
         )
         Text(
             text = stringResource(R.string.univ),
-            fontSize = 22.sp
+            fontSize = 15.sp
         )
-
         Card(
             modifier = Modifier
                 .fillMaxWidth(1f)
@@ -65,18 +65,22 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                     contentDescription = null,
                     modifier = Modifier.size(60.dp).padding(5.dp)
                 )
-                Column {
+                Column(
+                    modifier = Modifier
+                        .width(200.dp)
+                        .height(100.dp)
+                ) {
                     Text(
                         text = stringResource(R.string.mhs1),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.White,
+                        color = colorResource(R.color.white),
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
                         text = stringResource(R.string.almt1),
                         fontSize = 20.sp,
-                        color = Color.Yellow,
+                        color = colorResource(R.color.yellow),
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
@@ -108,12 +112,16 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                     contentDescription = null,
                     modifier = Modifier.size(60.dp).padding(5.dp)
                 )
-                Column {
+                Column(
+                    modifier = Modifier
+                        .width(200.dp)
+                        .height(130.dp)
+                ) {
                     Text(
-                        text = stringResource(R.string.mhs1),
+                        text = stringResource(R.string.mhs2),
                         fontSize = 30.sp,
-                        fontFamily = FontFamily.Cursive,
-                        color = Color.White,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(R.color.white),
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
@@ -123,9 +131,9 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                         modifier = Modifier.padding(top = 10.dp)
                     )
                     Text(
-                        text = stringResource(R.string.almt1),
+                        text = stringResource(R.string.almt2),
                         fontSize = 20.sp,
-                        color = Color.Yellow,
+                        color = colorResource(R.color.yellow),
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
@@ -156,12 +164,15 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                     contentDescription = null,
                     modifier = Modifier.size(60.dp).padding(5.dp)
                 )
-                Column {
+                Column(
+                    modifier = Modifier
+                        .width(200.dp)
+                        .height(130.dp)
+                ) {
                     Text(
-                        text = stringResource(R.string.mhs1),
+                        text = stringResource(R.string.mhs3),
                         fontSize = 30.sp,
-                        fontFamily = FontFamily.Cursive,
-                        color = Color.White,
+                        color = colorResource(R.color.white),
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
@@ -171,9 +182,9 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                         modifier = Modifier.padding(top = 10.dp)
                     )
                     Text(
-                        text = stringResource(R.string.almt1),
+                        text = stringResource(R.string.almt3),
                         fontSize = 20.sp,
-                        color = Color.White,
+                        color = colorResource(R.color.white),
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
@@ -204,12 +215,16 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                     contentDescription = null,
                     modifier = Modifier.size(60.dp).padding(5.dp)
                 )
-                Column {
+                Column(
+                    modifier = Modifier
+                        .width(200.dp)
+                        .height(130.dp)
+                ) {
                     Text(
-                        text = stringResource(R.string.mhs1),
+                        text = stringResource(R.string.mhs4),
                         fontSize = 30.sp,
-                        fontFamily = FontFamily.Cursive,
-                        color = Color.White,
+                        fontWeight = FontWeight.Bold,
+                        color = colorResource(R.color.white),
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
@@ -219,9 +234,9 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
                         modifier = Modifier.padding(top = 10.dp)
                     )
                     Text(
-                        text = stringResource(R.string.almt1),
+                        text = stringResource(R.string.almt4),
                         fontSize = 20.sp,
-                        color = Color.White,
+                        color = colorResource(R.color.white),
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
