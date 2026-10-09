@@ -49,7 +49,7 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
         Card(
             modifier = Modifier
                 .fillMaxWidth(1f)
-                .padding(12.dp),
+                .padding(horizontal = 12.dp, vertical = 4.dp),
             colors = CardDefaults.cardColors(
                 containerColor = colorResource(R.color.grey1)
             )
@@ -96,7 +96,7 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
         Card(
             modifier = Modifier
                 .fillMaxWidth(1f)
-                .padding(12.dp),
+                .padding(horizontal = 12.dp, vertical = 4.dp),
             colors = CardDefaults.cardColors(
                 containerColor = colorResource(R.color.purple1)
             )
@@ -148,7 +148,7 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
         Card(
             modifier = Modifier
                 .fillMaxWidth(1f)
-                .padding(12.dp),
+                .padding(horizontal = 12.dp, vertical = 4.dp),
             colors = CardDefaults.cardColors(
                 containerColor = colorResource(R.color.blue1)
             )
@@ -199,7 +199,7 @@ fun TugasPrak3(modifier: Modifier = Modifier) {
         Card(
             modifier = Modifier
                 .fillMaxWidth(1f)
-                .padding(12.dp),
+                .padding(horizontal = 12.dp, vertical = 4.dp),
             colors = CardDefaults.cardColors(
                 containerColor = colorResource(R.color.green1)
             )
